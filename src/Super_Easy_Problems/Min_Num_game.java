@@ -1,3 +1,4 @@
+package Super_Easy_Problems;
 import java.util.Arrays;
 
 public class Min_Num_game {

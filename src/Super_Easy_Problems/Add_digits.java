@@ -1,3 +1,4 @@
+package Super_Easy_Problems;
 public class Add_digits {
     public static void main(String[] args) {
 
