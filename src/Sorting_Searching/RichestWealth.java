@@ -1,4 +1,4 @@
-
+package Sorting_Searching;
 
 public class RichestWealth {
     public static void main(String[] args) {

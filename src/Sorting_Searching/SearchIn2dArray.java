@@ -1,4 +1,4 @@
-
+package Sorting_Searching;
 import java.util.Arrays;
 public class SearchIn2dArray {
     public static void main(String[] args) {

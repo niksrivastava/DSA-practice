@@ -1,4 +1,4 @@
-package Basic;
+package Arrays;
 import java.util.*;
 public class swap012 {
 

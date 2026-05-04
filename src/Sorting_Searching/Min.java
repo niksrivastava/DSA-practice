@@ -1,4 +1,4 @@
-
+package Sorting_Searching;
 
 public class Min {
     public static void main(String[] args) {

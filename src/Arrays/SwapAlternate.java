@@ -1,4 +1,4 @@
-package Basic;
+package Arrays;
 
 public class SwapAlternate {
     public static void main(String[] args) {

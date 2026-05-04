@@ -1,3 +1,4 @@
+package Binary_Search;
 public class Mountain_in_Arr {
     public static void main(String[] args) {
         int[] arr = {2,4,5,6,7,5,3};

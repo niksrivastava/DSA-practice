@@ -1,3 +1,4 @@
+package Arrays;
 public class Sum_of_Arrays {
     public static void main(String[] args) {
         int[] arr1 = {1, 4, 6};

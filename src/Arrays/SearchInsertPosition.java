@@ -1,4 +1,5 @@
-package Basic;
+package Arrays;
+
 import java.util.*;
 public class SearchInsertPosition {
     public static void main(String[] args) {

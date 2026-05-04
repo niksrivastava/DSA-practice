@@ -1,4 +1,4 @@
-package Basic;
+package Arrays;
 import java.util.*;
 public class SortedCheck {
     public static void main(String[] args) {

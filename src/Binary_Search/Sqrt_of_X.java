@@ -1,3 +1,4 @@
+package Binary_Search;
 public class Sqrt_of_X {
     public static void main(String[] args) {
         int x = 37;

@@ -1,3 +1,4 @@
+package Binary_Search;
 public class Pivot_in_Arr {
     static int bi_search(int[] arr){
         int s =0;

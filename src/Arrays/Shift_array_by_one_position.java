@@ -1,3 +1,4 @@
+package Arrays;
 import java.util.Arrays;
 public class Shift_array_by_one_position {
     public static void main(String[] args) {

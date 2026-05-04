@@ -1,3 +1,4 @@
+package Binary_Search;
 public class Binary_Search {
     static int binary_search(int arr[], int key){
         int start = 0;

@@ -1,4 +1,4 @@
-
+package Sorting_Searching;
 public class Linearsearch {
     public static void main(String[] args) {
         int[] arr = {2, 3 ,1 ,87, 45, 9, 90, 56, 5};

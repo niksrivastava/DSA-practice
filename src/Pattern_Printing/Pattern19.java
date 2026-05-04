@@ -1,7 +1,8 @@
+package Pattern_Printing;
 public class Pattern19 {
     public static void main(String[] args) {
         int  n = 4;
-        int val = 0;
+        // int val = 0;
         for(int row=1; row<=n; row++){
             for(int col_space=1; col_space<=(n-row); col_space++){
                 System.out.print("  ");

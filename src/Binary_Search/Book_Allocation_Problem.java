@@ -1,3 +1,4 @@
+package Binary_Search;
 public class Book_Allocation_Problem {
     public static void main(String[] args) {
         int[] arr_of_book_page = {10, 20, 30, 40};

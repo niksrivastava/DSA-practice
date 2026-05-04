@@ -1,4 +1,4 @@
-import java.util.*;
+package Arrays;
 public class Extreme_element_in_an_alternate_manner {
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5,6};

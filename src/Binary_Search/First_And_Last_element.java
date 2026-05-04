@@ -1,3 +1,4 @@
+package Binary_Search;
 public class First_And_Last_element {
     public static void main(String[] args) {
         int [] arr = {3, 4 , 5, 5, 5, 5, 6, 6, 8, 9};

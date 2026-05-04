@@ -1,3 +1,4 @@
+package Arrays;
 import java.util.Arrays;
 
 public class Merge_two_sorted_arrays {

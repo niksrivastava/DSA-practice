@@ -1,3 +1,4 @@
+package Binary_Search;
 public class Search_in_rotated_sorted_Arr {
     public static void main(String[] args) {
         int [] arr={4,5,6,7,0,1,2};
