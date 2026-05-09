@@ -10,8 +10,6 @@ public class Remove_dup_from_sorted_arr {
         int i = 0;
         int j = 1;
         int n = nums.length;
-
-
             while ( j < n) {
 
                 if(nums[i] == nums[j]){
@@ -23,8 +21,8 @@ public class Remove_dup_from_sorted_arr {
                 j++;
             }
         }
-
         return i+1;
     }
-    
 }
+
+
