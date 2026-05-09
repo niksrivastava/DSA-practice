@@ -7,10 +7,6 @@ public class Pivot_Index {
          System.out.println(ans);
     }
     static int pivot(int[] nums){
-        // int pivot = 0;
-
-        int s = 0;
-        int e = nums.length -1;
         int i_sum = 0;
         int j_sum = 0;
 
