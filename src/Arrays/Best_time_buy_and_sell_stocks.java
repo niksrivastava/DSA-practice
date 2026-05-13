@@ -9,24 +9,24 @@ public class Best_time_buy_and_sell_stocks {
     static int profit(int[] nums){
         int profit =0;
         int max_profit =0;
-        int privious_buy = Integer.MAX_VALUE;
+        int previous_buy = Integer.MAX_VALUE;
 
         for (int buy = 0; buy < nums.length; buy++) {
-            if(nums[buy] > privious_buy){
+            if(nums[buy] >= previous_buy){
                 continue;
             }
             
             for (int sell = buy+1; sell < nums.length; sell++) {
                 profit = nums[sell] - nums[buy];
                 if(profit < 0){
-                    break;
+                    continue;
                 }
                 else{
                     max_profit = Math.max(max_profit, profit);
                 }
 
             }
-            privious_buy = nums[buy];
+            previous_buy = nums[buy];
         }
         return max_profit;
 
