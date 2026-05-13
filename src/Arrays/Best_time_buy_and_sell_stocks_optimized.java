@@ -8,30 +8,22 @@ public class Best_time_buy_and_sell_stocks_optimized {
     }
     static int profit(int[] nums){
         
-        int min_ele_value = Integer.MAX_VALUE;
-        int min_ind =0;
-
-        for (int i = 0; i < nums.length; i++) {
-            if(nums[i] < min_ele_value){
-                min_ele_value = nums[i];
-                min_ind =i;
+        int profit = 0;
+        int max_profit = 0;
+        int buy = 0;
+        int sell = buy + 1;
+        while(sell< nums.length){
+            if(nums[sell] <= nums[buy]){
+                buy = sell;
+                sell = buy +1;
+                continue;
             }
-        }
-
-        int profit =0;
-        int max_profit =0;
-
-        int buy = nums[min_ind];
-        int sell = min_ind+1;
-        while(sell<(nums.length)){
-            
-            profit = nums[sell]-buy;
-            
+            profit = nums[sell] - nums[buy];
             max_profit = Math.max(max_profit, profit);
-            
             sell++;
-
         }
         return max_profit;
+
+
     }
 }
