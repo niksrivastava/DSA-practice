@@ -3,7 +3,7 @@ package Super_Easy_Problems;
 public class Robot_returns_to_origin {
     public static void main(String[] args) {
         String moves = "UD";
-        boolean origin = move(s);
+        boolean origin = move(moves);
         System.out.println(origin);
     }
     static boolean move(String s){
