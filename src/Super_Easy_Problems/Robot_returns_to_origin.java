@@ -22,7 +22,6 @@ public class Robot_returns_to_origin {
             if(s.charAt(i) == 'L'){
                 count2--;
             }
-
         }
         if(count1 == 0 && count2 == 0){
             return true;
