@@ -7,6 +7,8 @@ public class Sieve_of_Eratosthenes {
         sieve(n,arr);
     }
     static void sieve(int n, boolean[] primes){
+
+        // false in arr means number is prime.
         for (int i = 2; i*i<= n; i++) {
             if(primes[i] == false){
                 for (int j = i*2; j <= n; j+=i) {
