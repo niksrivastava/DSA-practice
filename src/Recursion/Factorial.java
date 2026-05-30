@@ -3,7 +3,7 @@ import java.util.*;
 public class Factorial {
 
     static int fact(int n){
-        if(n==0){
+        if(n<=1){
             return 1;
         }
         int cal = fact(n-1);
