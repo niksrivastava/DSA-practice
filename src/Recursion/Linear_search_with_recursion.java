@@ -8,7 +8,8 @@ public class Linear_search_with_recursion {
         System.out.println(LS_value(arr,0,0)+"," + " Which means: " +LS_bool(arr, 0, 0));
         int arr2[] = {1,2,4,6,8,5,2,6};
         System.out.println(find_all_index(arr2, 0, 2, new ArrayList<>()));
-        System.out.println(find_all_index(arr2, 0, 2));
+        int arr3[] = {1,2,4,6,8,5,2,6,6,3,8,2};
+        System.out.println(find_all_index(arr3, 0, 2));
     }
 
     static int LS_value(int arr[] , int index, int target){
