@@ -2,7 +2,7 @@ package Recursion;
 
 import java.util.Arrays;
 
-public class Merger_sort_InPlace_with_recursion {
+public class Merge_sort_InPlace_with_recursion {
     public static void main(String[] args) {
         int arr[] = {6,2,3,7,5,9,1};
         merge_sort_InPlace(arr, 0, arr.length);
@@ -10,7 +10,7 @@ public class Merger_sort_InPlace_with_recursion {
     }
     static void merge_sort_InPlace(int arr[], int s, int e){
 
-        if(e -s == 1){
+        if(e - s == 1){
             return;
         }
 
