@@ -16,7 +16,7 @@ public class Subset_Without_Duplicates {
 
     static List<List<Integer>> subset_without_duplicates(int arr[]){
 
-
+        Arrays.sort(arr);
 
         List<List<Integer>> outer = new ArrayList<>();
 
