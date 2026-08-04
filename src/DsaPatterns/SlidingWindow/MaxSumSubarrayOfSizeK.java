@@ -13,7 +13,7 @@ public class MaxSumSubarrayOfSizeK {
         int high = size-1;
         for(int i = low; i <= high; i++){
             sum = sum + arr[i] ;
-}
+        }
             while(high < arr.length){
                 res = Math.max(res, sum);
                 low++;
