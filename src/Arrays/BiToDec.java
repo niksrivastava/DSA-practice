@@ -18,5 +18,6 @@ public class BiToDec {
 
         }
         System.out.println("Answer is: " + ans);
+        sc.close();
     }
 }

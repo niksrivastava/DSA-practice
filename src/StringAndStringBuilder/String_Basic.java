@@ -1,5 +1,5 @@
 package StringAndStringBuilder;
-import java.util.*; 
+
 public class String_Basic {
     public static void main(String[] args) {
         // String FirstName = "Love";

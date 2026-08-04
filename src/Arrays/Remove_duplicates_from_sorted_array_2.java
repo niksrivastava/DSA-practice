@@ -1,6 +1,6 @@
 package Arrays;
 
-import java.util.Arrays;
+// import java.util.Arrays;
 
 public class Remove_duplicates_from_sorted_array_2 {
     public static void main(String[] args) {

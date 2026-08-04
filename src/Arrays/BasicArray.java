@@ -27,6 +27,6 @@ public class BasicArray {
             str[0] = "Nik";
             str[3] = "Nik";
             System.out.println(Arrays.toString(str));
-
+            sc.close();
     }
 }

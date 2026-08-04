@@ -1,11 +1,11 @@
 package StringAndStringBuilder;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4};
+        // int[] arr = {1, 2, 3, 4};
         // int num = 10;
         // String name = "Nikhil";
         // System.out.println(name);

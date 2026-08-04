@@ -1,5 +1,5 @@
 package Arrays;
-import java.util.*;
+// import java.util.*;
 public class Transpose_of_matrix {
     public static void main(String[] args) {
         int arr[][] = {

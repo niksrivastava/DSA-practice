@@ -1,5 +1,5 @@
 package Arrays;
-import java.util.*;
+// import java.util.*;
 public class Remove_dup_from_sorted_arr {
     public static void main(String[] args) {
         int [] nums = {0,0,1,1,1,2,2,3,3,4};

@@ -1,5 +1,5 @@
 package Arrays;
-import java.util.*;
+// import java.util.*;
 public class Pivot_index_optimum {
     public static void main(String[] args) {
         

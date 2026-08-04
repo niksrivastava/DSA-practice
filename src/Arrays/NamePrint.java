@@ -10,5 +10,6 @@ public class NamePrint {
         for (int i = 0; i < name.length; i++) {
             System.out.print(name[i] + " ");
         }
+        sc.close();
     }
 }
