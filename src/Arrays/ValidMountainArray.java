@@ -25,7 +25,6 @@ public class ValidMountainArray {
             i++;
         }
 
-        // Peak first ya last element nahi hona chahiye
         if (i == 0 || i == n - 1) {
             return false;
         }
