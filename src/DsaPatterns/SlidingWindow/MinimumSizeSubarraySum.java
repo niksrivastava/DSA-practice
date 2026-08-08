@@ -6,7 +6,7 @@ public class MinimumSizeSubarraySum {
         int ans = length(nums, 7);
         System.out.println(ans);
     }
-    static int length(int[] arr, int target){
+    public static int length(int[] arr, int target){
         
         int n = arr.length;
         int sum = 0;
