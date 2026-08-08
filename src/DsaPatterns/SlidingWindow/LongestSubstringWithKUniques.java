@@ -1,6 +1,6 @@
 package DsaPatterns.SlidingWindow;
 
-// import java.util.*;
+import java.util.*;
 
 public class LongestSubstringWithKUniques {
     public static void main(String[] args) {
@@ -10,35 +10,32 @@ public class LongestSubstringWithKUniques {
         System.out.println(result); 
     }
     public static int length(String s, int k){
-        int len = 0;
+
+        HashMap<Character, Integer> map = new HashMap<>();
+
         int low = 0;
-        int high = 1;
-        int count = 0;
+        int res = -1;
         int n = s.length();
-        while(high<n){
-                
-                if (s.charAt(high) == s.charAt(high-1)) {
-                    high++;
+
+        for(int high = 0; high < n; high++){
+            char ch = s.charAt(high);
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+
+            while(map.size() > k){
+                char leftChar = s.charAt(low);
+                map.put(leftChar, map.get(leftChar) -1);
+                if(map.get(leftChar)==0){
+                    map.remove(leftChar);
                 }
-                else if(s.charAt(high) != s.charAt(high-1)){
-                    
-                    
-                    for(int i = low; i <= high; i++){
-                        if(s.charAt(i) != s.substring(low, high)){
-                            count++;
-                            
-                        }
-                        if(count>k){
-                            
-                            break;
-                        }
-                
-                    }
-                    count = 0;
-                    low++;
-                }
-            
+                low++;
+            }
+            if(map.size() == k){
+                res = Math.max(res, high-low+1);
+            }
         }
+
+        return res;
+
     }
 
 }
