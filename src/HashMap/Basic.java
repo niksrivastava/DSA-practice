@@ -38,7 +38,30 @@ public class Basic {
         }
 
         System.out.println(newMap);
-        System.out.print(newMap.size());
+        System.out.println(newMap.size());
+
+        // for Strings...
+
+        String str = "banana";
+
+        HashMap<Character, Integer> strMap = new HashMap<>();
+
+        for(int i = 0; i < str.length(); i++) {
+
+            char ch = str.charAt(i);
+
+            if(strMap.containsKey(ch)) {
+                strMap.put(ch, strMap.get(ch) + 1);
+            }
+            else {
+                strMap.put(ch, 1);
+            }
+        }
+
+        System.out.println(strMap);
+        System.out.println(strMap.size());
+
+
 
     }
     
