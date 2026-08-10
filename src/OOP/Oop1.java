@@ -1,12 +1,14 @@
 package OOP;
 
-import java.util.*;
+
 
 public class Oop1 {
     public static void main(String[] args) {
 
         // creating class 
         Student[] student1 = new Student[5];
+
+        System.out.println(student1);
 
         // just declaring reference variable of Student
         Student kunal;

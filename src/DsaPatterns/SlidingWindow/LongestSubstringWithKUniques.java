@@ -9,6 +9,7 @@ public class LongestSubstringWithKUniques {
         int result = length(s, k);
         System.out.println(result); 
     }
+
     public static int length(String s, int k){
 
         HashMap<Character, Integer> map = new HashMap<>();
@@ -37,5 +38,4 @@ public class LongestSubstringWithKUniques {
         return res;
 
     }
-
 }
