@@ -1,6 +1,4 @@
-package OOP;
-
-import java.net.Socket;
+package OOP.Introduction;
 
 public class WrapperExample {
     public static void main(String[] args) {
@@ -18,10 +16,14 @@ public class WrapperExample {
         // kunal = new A ("new obj");
 
 
-        A obj;
+        A obj = new A("hjsdbcbuiw");
         for (int i = 0; i < 100000000; i++) {
             obj = new A("random object");
         }
+
+        System.out.println(obj);
+
+
 
     }
     public static void swap(Integer a, Integer b){
