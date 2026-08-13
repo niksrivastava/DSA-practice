@@ -22,8 +22,10 @@ public class StaticBlock {
         
 
         StaticBlock obj2 = new StaticBlock();
+
         System.out.println(StaticBlock.a + " " + StaticBlock.b);
 
-
+        System.out.println(obj);
+        System.out.println(obj2);
     }
 }

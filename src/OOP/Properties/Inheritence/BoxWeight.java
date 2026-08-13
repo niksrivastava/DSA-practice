@@ -4,6 +4,11 @@ public class BoxWeight extends Box {
 
     double weight;
 
+    // @Override
+    // static void greeting(){// error becuz oe=verriding depends on object and static stuffs does not depend on object. hence you can't override it.
+    //     System.out.println("I am in BoxWeight class");
+    // }
+
     public BoxWeight(){
         this.weight = -1;
     }
