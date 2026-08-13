@@ -5,6 +5,7 @@ public class Box {
     double l;
     double w;
     double h;
+    // double weight = 10;
     
     Box(){
         this.l = -1;
@@ -28,6 +29,9 @@ public class Box {
 
     // square
     Box(double size){
+
+        // super(); // Object class
+
         this.l = size;
          this.h = size;
          this.w = size;
