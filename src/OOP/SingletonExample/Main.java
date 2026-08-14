@@ -1,12 +1,25 @@
 package OOP.SingletonExample;
 
-public class Main {
-    Singleton obj = Singleton.getInstance();
+import OOP.AccessModifier.A;
 
-    Singleton obj2 = Singleton.getInstance();
+public class Main extends A{
 
-    Singleton obj3 = Singleton.getInstance();
+    Main(int num, String name, int[] aar){
+        super(num, name);
+    }
+    public static void main(String[] args) {
+        Singleton obj = Singleton.getInstance();
 
-    // all 3 variables will point to one single object
+        Singleton obj2 = Singleton.getInstance();
+
+        Singleton obj3 = Singleton.getInstance();
+
+        // all 3 variables will point to one single object
+
+        A a = new A(5, "kunal");   
+        a.getNum(); 
+        // int n = a.num;
+    }
+    
 
 }
