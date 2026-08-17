@@ -1,4 +1,4 @@
-package OOP.Interfaces.ExtendInterfacesExample2;
+package OOP.Interfaces.ExtendInterfacesExample;
 
 public interface B{
     void greet();

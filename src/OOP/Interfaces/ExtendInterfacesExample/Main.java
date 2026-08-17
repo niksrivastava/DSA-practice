@@ -1,4 +1,4 @@
-package OOP.Interfaces.ExtendInterfacesExample2;
+package OOP.Interfaces.ExtendInterfacesExample;
 
 public class Main implements A,B{
 
