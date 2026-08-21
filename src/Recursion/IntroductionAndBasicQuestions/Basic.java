@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.IntroductionAndBasicQuestions;
 public class Basic {
 
     static void reach_home(int src, int dest){

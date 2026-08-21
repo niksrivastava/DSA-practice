@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.SortingAndSearchingTechniques;
 import java.util.*;
 public class Bubble_sort_with_recursion {
     public static void main(String[] args) {

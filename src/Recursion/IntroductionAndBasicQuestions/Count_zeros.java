@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.IntroductionAndBasicQuestions;
 
 public class Count_zeros {
     static int c = 0;

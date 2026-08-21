@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Arrays;
 
 public class Arr_sorted_or_not_with_rec {
     public static void main(String[] args) {

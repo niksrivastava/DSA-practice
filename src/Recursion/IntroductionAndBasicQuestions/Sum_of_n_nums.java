@@ -1,19 +1,18 @@
-package Recursion;
-import java.util.*;
-public class Factorial {
+package Recursion.IntroductionAndBasicQuestions;
 
-    static int fact(int n){
+import java.util.Scanner;
+
+public class Sum_of_n_nums {
+    static int sum(int n){
         if(n<=1){
             return 1;
         }
-        int cal = fact(n-1);
-        int final_ans = n*cal;
-        return final_ans;
+        return n+sum(n-1);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int ans = fact(n);
+        int ans = sum(n);
         System.out.println(ans);
         sc.close();
     }

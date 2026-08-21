@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.IntroductionAndBasicQuestions;
 
 public class Palindrome_of_num {
     public static void main(String[] args) {

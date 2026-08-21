@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.IntroductionAndBasicQuestions;
 
 public class GCD {
     public static void main(String[] args) {

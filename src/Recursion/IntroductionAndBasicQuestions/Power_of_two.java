@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.IntroductionAndBasicQuestions;
 import java.util.*;
 public class Power_of_two {
 

@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Arrays;
 
 public class Search_in_rotated_sorted_arr_with_recursion {
     public static void main(String[] args) {
