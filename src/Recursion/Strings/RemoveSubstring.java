@@ -1,6 +1,6 @@
-package Strings;
+package Recursion.Strings;
 
-public class Remove_substring_with_recursion {
+public class RemoveSubstring {
     public static void main(String[] args) {
         System.out.println(skipapple("bdappledg"));
         System.out.println(skipAppNotApple("bahapphsga"));

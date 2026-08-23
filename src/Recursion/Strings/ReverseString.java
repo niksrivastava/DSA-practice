@@ -1,6 +1,6 @@
 package Recursion.Strings;
 
-public class Reverse_string {
+public class ReverseString {
     public static void main(String[] args) {
         String name = "nikhil";
         char[] arr = name.toCharArray();

@@ -1,8 +1,8 @@
-package Strings;
+package Recursion.Strings;
 
 import java.util.ArrayList;
 
-public class SubSeq_with_recursion {
+public class SubSequence {
     public static void main(String[] args) {
         sub_seq("", "abc");
         System.out.println(sub_seq_return("", "abc"));

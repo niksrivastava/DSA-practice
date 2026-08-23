@@ -1,6 +1,6 @@
-package Strings;
+package Recursion.Strings;
 
-public class Stream_with_recursion {
+public class StreamOfCharacters {
     public static void main(String[] args) {
         skip("", "baccdah");
         System.out.println(skip( "baccdah"));
