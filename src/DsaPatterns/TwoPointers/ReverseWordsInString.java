@@ -17,14 +17,6 @@ public class ReverseWordsInString {
                 break;
             }
         }
-
-        // if(s.startsWith(" ")){
-        //     s = s.substring(1);
-        // }
-
-        // if(s.endsWith(" ")){
-        //     s = s.substring(0, s.length()-1);
-        // }
         
         s = s.trim();
         
