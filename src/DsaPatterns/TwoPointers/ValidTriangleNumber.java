@@ -4,9 +4,11 @@ import java.util.Arrays;
 
 public class ValidTriangleNumber {
     public static void main(String[] args) {
-        int arr[] = {1,1,3,4};
+        int arr[] = {2,2,3,4};
         int ans = trianlges(arr);
+        int optimized = optimizedSolution(arr);
         System.out.println(ans);
+        System.out.println(optimized);
     }
     public static int trianlges(int[] arr){
         int ans = 0;
@@ -42,6 +44,34 @@ public class ValidTriangleNumber {
             i++;
             j = i+1;
         }
+        return ans;
+    }
+
+    public static int optimizedSolution(int arr[]){
+        int ans = 0;
+
+        Arrays.sort(arr);
+        
+        int k = arr.length - 1;
+
+        while (k >= 2) {
+
+            int i = 0;
+            int j = k - 1;
+
+            while (i < j) {
+
+                if (arr[i] + arr[j] > arr[k]) {
+                    ans += j - i;
+                    j--;
+                } else {
+                    i++;
+                }
+            }
+
+            k--;
+        }
+
         return ans;
     }
 }
