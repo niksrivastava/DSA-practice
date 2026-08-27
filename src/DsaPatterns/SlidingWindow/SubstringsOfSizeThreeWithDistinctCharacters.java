@@ -8,6 +8,8 @@ public class SubstringsOfSizeThreeWithDistinctCharacters {
         String s = "aababcabc";
         int size = 3;
         int ans = countGoodSubstrings(s, size);
+        int optimizedAns = countGoodSubstringsOptimized(s, size);
+        System.out.println(optimizedAns);
         System.out.println(ans);
     }
     public static int countGoodSubstrings(String s, int k){
@@ -43,5 +45,24 @@ public class SubstringsOfSizeThreeWithDistinctCharacters {
         }
         return count;
     }
-    
+    public static int countGoodSubstringsOptimized(String s, int k){
+
+        int count = 0;
+        int i = 0;
+
+        while(i < s.length()-2){
+
+            char ch1 = s.charAt(i);
+            char ch2 = s.charAt(i+1);
+            char ch3 = s.charAt(i+2);
+
+            if(ch1 != ch2 && ch2 != ch3 && ch3 != ch1){
+                count++;
+            }
+
+            i++;
+
+        }
+        return count;
+    }
 }
