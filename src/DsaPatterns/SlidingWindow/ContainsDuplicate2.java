@@ -1,11 +1,15 @@
 package DsaPatterns.SlidingWindow;
 
+import java.util.HashSet;
+
 public class ContainsDuplicate2 {
     public static void main(String[] args) {
         int arr[] = {1,2,3,1,2,3};
         int k = 2;
         boolean ans = duplicate(arr, k);
         System.out.println(ans);
+        boolean optimizedAns = duplicateOptimized(arr, k);
+        System.out.println(optimizedAns);
 
     }
 
@@ -27,5 +31,25 @@ public class ContainsDuplicate2 {
             
         }
         return ans;
+    }
+
+    public static boolean duplicateOptimized(int arr[], int k) {
+
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if (set.contains(arr[i])) {
+                return true;
+            }
+
+            set.add(arr[i]);
+
+            if (set.size() > k) {
+                set.remove(arr[i - k]);
+            }
+        }
+
+        return false;
     }
 }
