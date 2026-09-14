@@ -5,6 +5,7 @@ public class LongestContinuousIncreasingSubsequence {
         int arr[] = {1,3,5,4,7};
         int ans = longest(arr);
         System.out.println(ans);
+        System.out.println(longestWithForLoop(arr));
     }
 
     public static int longest(int arr[]){
@@ -29,4 +30,22 @@ public class LongestContinuousIncreasingSubsequence {
         return maxAns;
 
     }
+
+    public static int longestWithForLoop(int arr[]) {
+
+    int count = 1;
+    int maxCount = 1;
+
+    for (int i = 1; i < arr.length; i++) {
+
+        if (arr[i - 1] < arr[i]) {
+            count++;
+            maxCount = Math.max(maxCount, count);
+        } else {
+            count = 1;
+        }
+    }
+
+    return maxCount;
+}
 }
