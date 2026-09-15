@@ -6,6 +6,8 @@ public class LongerContiguousSegmentsOfOnesThanZeros {
         boolean ans = segments(s);
         System.out.println(ans);
 
+        boolean optimizedAns = optimized(s);
+        System.out.println(optimizedAns);
     }
     
     public static boolean segments(String s){
@@ -77,5 +79,32 @@ public class LongerContiguousSegmentsOfOnesThanZeros {
         return ans;
     }
 
+    public static boolean optimized(String s) {
+
+        boolean ans = false;
+        int one = 0;
+        int zero = 0;
+
+        int maxOne = 0;
+        int maxZero = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+
+            if (s.charAt(i) == '1') {
+                one++;
+                zero = 0;
+                maxOne = Math.max(maxOne, one);
+            } else {
+                zero++;
+                one = 0;
+                maxZero = Math.max(maxZero, zero);
+            }
+        }
+
+        if(maxOne>maxZero){
+            return true;
+        }
+        return ans;
+    }
 }
 
