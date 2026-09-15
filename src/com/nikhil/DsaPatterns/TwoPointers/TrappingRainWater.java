@@ -7,6 +7,8 @@ public class TrappingRainWater {
         System.out.println(ans);
         int betterAns = better(arr);
         System.out.println(betterAns);
+        int optimalAns = optimal(arr);
+        System.out.println(optimalAns);
         
     }
     public static int trap(int arr[]){
@@ -53,6 +55,33 @@ public class TrappingRainWater {
 
         for (int i = 0; i < n; i++) {
             ans += Math.min(lMax[i], rMax[i]) - arr[i];
+        }
+
+        return ans;
+    }
+
+    public static int optimal(int arr[]){
+
+        int n = arr.length;
+        int ans = 0;
+        int l = 0;
+        int r = n-1;
+        int lMax = 0;
+        int rMax = 0;
+
+        while(l<r){
+
+            lMax = Math.max(lMax, arr[l]);
+            rMax = Math.max(rMax, arr[r]);
+
+            if(lMax < rMax){
+                ans += lMax - arr[l];
+                l++;
+            }
+            else{
+                ans += rMax - arr[r];
+                r++;
+            }
         }
 
         return ans;
