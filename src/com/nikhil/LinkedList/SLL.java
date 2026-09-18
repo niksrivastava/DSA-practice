@@ -2,9 +2,9 @@ package com.nikhil.LinkedList;
 
 public class SLL {
 
-    private Node head;
-    private Node tail;
-    private int size;
+    public Node head;
+    public Node tail;
+    public int size;
 
     public SLL(){
         this.size = 0;
@@ -61,7 +61,7 @@ public class SLL {
         head = insertRec(val, index, head);
     }
 
-    private Node insertRec(int val, int index, Node node){
+    public Node insertRec(int val, int index, Node node){
         if(index == 0){
             Node temp = new Node(val, node);
             size++;
@@ -142,10 +142,10 @@ public class SLL {
         return val;
     }
 
-    private class Node {
+    public class Node {
     
-        private int value;
-        private Node next;
+        public int value;
+        public Node next;
 
         public Node(int value){
             this.value = value;
