@@ -2,20 +2,20 @@ package com.nikhil.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        SLL list = new SLL();
-        list.insertFirst(3);
-        list.insertFirst(2);
-        list.insertFirst(8);
-        list.insertFirst(17);
-        list.insertLast(99);
-        list.insert(56,4);
-        list.deleteFirst();
-        list.deleteLast();
-        list.delete(2);
-        System.out.println(list.find(8));
-        list.display();
-        list.insertWithRecursion(88,2);
-        list.display();
+        // SLL list = new SLL();
+        // list.insertFirst(3);
+        // list.insertFirst(2);
+        // list.insertFirst(8);
+        // list.insertFirst(17);
+        // list.insertLast(99);
+        // list.insert(56,4);
+        // list.deleteFirst();
+        // list.deleteLast();
+        // list.delete(2);
+        // System.out.println(list.find(8));
+        // list.display();
+        // list.insertWithRecursion(88,2);
+        // list.display();
 
         // DLL list = new DLL();
         // list.insertFirst(3);
@@ -36,6 +36,23 @@ public class Main {
         // list.insert(5);
         // list.delete(17);
         // list.display();
+
+        SLL first = new SLL();
+        SLL second = new SLL();
+
+        first.insertLast(1);
+        first.insertLast(4);
+        first.insertLast(2);
+
+        second.insertLast(3);
+        second.insertLast(1);
+        second.insertLast(8);
+        second.insertLast(14);
+
+        first.bubbleSort();
+        second.bubbleSort();
+        first.display();
+        second.display();
     }
 }
 

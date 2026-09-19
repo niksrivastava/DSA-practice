@@ -10,6 +10,26 @@ public class SLL {
         this.size = 0;
     }
 
+    public class Node {
+    
+        public int value;
+        public Node next;
+
+        public Node(int value){
+            this.value = value;
+        }
+
+        public Node(int value, Node next){
+            this.value = value;
+            this.next = next;
+        }
+
+        @Override
+        public String toString() {
+            return "Node{value=" + value + "}";
+        }
+    }
+
     public void insertFirst(int val){
         Node node = new Node(val);
         node.next = head;
@@ -142,23 +162,46 @@ public class SLL {
         return val;
     }
 
-    public class Node {
-    
-        public int value;
-        public Node next;
+    public void bubbleSort(){
+        bubbleSort(size-1, 0);
+    }
 
-        public Node(int value){
-            this.value = value;
+    public void bubbleSort(int row, int col){
+        if(row==0){
+            return;
         }
 
-        public Node(int value, Node next){
-            this.value = value;
-            this.next = next;
-        }
+        if(col < row){
+            Node first = get(col);
+            Node second = get(col + 1);
 
-        @Override
-        public String toString() {
-            return "Node{value=" + value + "}";
+            if(first.value > second.value){
+
+                // swap...
+                if(first == head){
+                    head = second;
+                    first.next = second.next;
+                    second.next = first;
+                }
+                else if(second == tail){
+                    Node prev = get(col-1);
+                    prev.next = second;
+                    tail = first;
+                    first.next = null;
+                    second.next = tail;
+                }
+                else{
+                    Node prev = get(col-1);
+                    prev.next = second;
+                    first.next = second.next;
+                    second.next = first;
+                }
+            }
+
+            bubbleSort(row, col+1);
+        }
+        else{
+            bubbleSort(row-1, 0);
         }
     }
 }
