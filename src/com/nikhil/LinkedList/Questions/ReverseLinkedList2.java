@@ -23,11 +23,11 @@ public class ReverseLinkedList2 {
     public static SLL.Node reverseBetween(SLL.Node head, int left, int right){
         
         if(left == right){
-            return list.head;
+            return head;
         }
 
         SLL.Node prev = null;
-        SLL.Node present = list.head;
+        SLL.Node present = head;
 
         for (int i = 0; present != null && i < left-1; i++) {
             prev = present;
@@ -54,10 +54,10 @@ public class ReverseLinkedList2 {
             last.next = prev;
         }
         else{
-            list.head = prev;
+            head = prev;
         }
         
         newEnd.next = present;
-        return list.head;
+        return head;
     }
 }
