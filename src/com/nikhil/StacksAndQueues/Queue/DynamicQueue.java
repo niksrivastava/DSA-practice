@@ -1,4 +1,4 @@
-package com.nikhil.Queue;
+package com.nikhil.StacksAndQueues.Queue;
 
 public class DynamicQueue extends CircularQueue{
     public DynamicQueue(){

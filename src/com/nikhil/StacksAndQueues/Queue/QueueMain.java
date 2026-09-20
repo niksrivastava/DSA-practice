@@ -1,4 +1,4 @@
-package com.nikhil.Queue;
+package com.nikhil.StacksAndQueues.Queue;
 
 public class QueueMain {
     public static void main(String[] args) throws Exception{

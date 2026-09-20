@@ -1,4 +1,4 @@
-package com.nikhil.Stack;
+package com.nikhil.StacksAndQueues.Stack;
 
 public class CustomStack {
     protected int[] data;

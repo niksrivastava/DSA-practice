@@ -1,16 +1,19 @@
-package com.nikhil.Queue;
+package com.nikhil.StacksAndQueues.Queue;
 
-public class CustomQueue {
+public class CircularQueue {
     protected int[] data;
     private static final int DEFAULT_SIZE = 10;
 
-    int end = 0;
+    protected int end = 0;
+    protected int front = 0;
+    private int size = 0;
 
-    public CustomQueue(){
+
+    public CircularQueue(){
         this(DEFAULT_SIZE);
     }
 
-    public CustomQueue(int size){
+    public CircularQueue(int size){
         this.data = new int[size];
     }
 
@@ -20,6 +23,8 @@ public class CustomQueue {
         }
 
         data[end++] = item;
+        end = end % data.length;
+        size++;
         return true;
     }
 
@@ -28,12 +33,10 @@ public class CustomQueue {
             throw new Exception("Queue is empty !!");
         }
 
-        int removed = data[0];
+        int removed = data[front++];
 
-        for (int i = 1; i < end; i++) {
-            data[i-1] = data[i];
-        }
-        end--;
+        front = front % data.length;
+        size--;
 
         return removed;
     }
@@ -44,23 +47,32 @@ public class CustomQueue {
             throw new Exception("Queue is empty !!");
         }
 
-        return data[0];
+        return data[front];
     }
 
     public void display(){
 
-        for (int i = 0; i < end; i++) {
-            System.out.print(data[i] + " <- ");
+        if(isEmpty()){
+            System.out.println("Empty");
+            return;
         }
+
+        int i = front;
+        
+        do{
+            System.out.print(data[i] + " -> ");
+            i++;
+            i %= data.length;
+        }while(i != end);
 
         System.out.print("END");
     }
 
     protected boolean isFull(){
-        return end == data.length;
+        return size == data.length;
     }
 
     protected  boolean isEmpty(){
-        return end == 0;
+        return size == 0;
     }
 }
