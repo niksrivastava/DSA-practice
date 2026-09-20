@@ -2,7 +2,7 @@ package com.nikhil.Queue;
 
 public class QueueMain {
     public static void main(String[] args) throws Exception{
-        CustomQueue queue = new CustomQueue(5);
+        CircularQueue queue = new CircularQueue(5);
         queue.insert(45);
         queue.insert(42);
         queue.insert(3);
@@ -12,7 +12,11 @@ public class QueueMain {
         queue.display();
 
         System.out.println(queue.remove());
+        queue.insert(33);
+        queue.display();
 
+        System.out.println(queue.remove());
+        queue.insert(99);
         queue.display();
     }
 }
