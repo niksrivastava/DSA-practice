@@ -7,6 +7,9 @@ public class CircularArrayLoop {
         int arr[] = {2,-1,1,2,2};
         boolean ans = loop(arr);
         System.out.println(ans);
+
+        boolean optimizedAns = optimized(arr);
+        System.out.println(optimizedAns);
     }
 
     public static boolean loop(int arr[]){
@@ -88,6 +91,77 @@ public class CircularArrayLoop {
 
         return false;
     }
+
+    public static boolean optimized(int arr[]){
+
+        for (int i = 0; i < arr.length; i++) {
+
+            if(arr[i] == 0){
+                continue;
+            }
+
+            int slow = i;
+            int fast = i;
+
+            boolean isPos = arr[i] > 0;
+
+            do{
+                slow = nextIndex(arr, slow);
+                fast = nextIndex(arr, fast);
+
+                if(isPos){
+                    if(arr[fast] < 0){
+                        break;
+                    }
+                }
+                else{
+                    if(arr[fast] > 0){
+                        break;
+                    }
+                }
+
+                fast = nextIndex(arr, fast);
+
+                if(isPos){
+                    if(arr[fast] < 0){
+                        break;
+                    }
+                }
+                else{
+                    if(arr[fast] > 0){
+                        break;
+                    }
+                }
+                if(slow == fast){
+                    if(slow != nextIndex(arr, slow)){
+                        return true;
+                    }
+                    break;
+                }
+
+            }while(slow != fast);
+
+            int current = i;
+
+            if(isPos){
+                while(arr[current] > 0){
+                    int next = nextIndex(arr, current);
+                    arr[current] = 0;
+                    current = next;
+                }
+            }
+            else{
+                while(arr[current] < 0){
+                    int next = nextIndex(arr, current);
+                    arr[current] = 0;
+                    current = next;
+                }
+            }
+
+        }
+
+        return false;
+    } 
 
     public static int nextIndex(int[] arr, int current){
         int next = current;
