@@ -15,6 +15,9 @@ public class CircularArrayLoop {
 
         for (int i = 0; i < arr.length; i++) {
             
+            if(arr[i] == 0){
+                continue;
+            }
             boolean isPos = arr[i] > 0;
             int current = i;
 
@@ -61,6 +64,26 @@ public class CircularArrayLoop {
 
                 current = next;
             }
+
+            set.clear();
+        
+            current = i;
+
+            if(isPos){
+                while(arr[current] > 0){
+                    int next = nextIndex(arr, current);
+                    arr[current] = 0;
+                    current = next;
+                }
+            }
+            else{
+                while(arr[current] < 0){
+                    int next = nextIndex(arr, current);
+                    arr[current] = 0;
+                    current = next;
+                }
+            }
+        
         }
 
         return false;
