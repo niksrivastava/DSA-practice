@@ -1,4 +1,6 @@
-package com.nikhil.DsaPatterns.SlowAndFastPointer;
+package com.nikhil.DsaPatterns.TwoPointers;
+
+import com.nikhil.DsaPatterns.SlowAndFastPointer.LL;
 
 public class PartitionList {
     public static void main(String[] args) {

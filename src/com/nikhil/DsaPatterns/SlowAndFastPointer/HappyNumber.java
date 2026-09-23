@@ -1,4 +1,4 @@
-package com.nikhil.LinkedList.Questions;
+package com.nikhil.DsaPatterns.SlowAndFastPointer;
 
 public class HappyNumber {
     public static void main(String[] args) {

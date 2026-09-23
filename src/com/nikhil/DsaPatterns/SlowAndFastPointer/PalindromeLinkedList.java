@@ -1,4 +1,4 @@
-package com.nikhil.LinkedList.Questions;
+package com.nikhil.DsaPatterns.SlowAndFastPointer;
 import com.nikhil.LinkedList.SLL;
 public class PalindromeLinkedList {
     public static void main(String[] args) {
