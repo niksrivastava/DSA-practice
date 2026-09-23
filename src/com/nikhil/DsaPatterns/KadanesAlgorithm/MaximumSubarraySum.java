@@ -1,6 +1,6 @@
-package com.nikhil.Arrays;
+package com.nikhil.DsaPatterns.KadanesAlgorithm;
 
-public class Maximum_subarray {
+public class MaximumSubarraySum {
     public static void main(String[] args) {
         int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
         int ans = max_sum(nums);

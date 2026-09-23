@@ -1,6 +1,6 @@
-package com.nikhil.Arrays;
+package com.nikhil.DsaPatterns.KadanesAlgorithm;
 
-public class Max_product {
+public class MaxSubarrayProduct {
     public static void main(String[] args) {
         int [] nums = {0, 2};
         int ans = product(nums);
