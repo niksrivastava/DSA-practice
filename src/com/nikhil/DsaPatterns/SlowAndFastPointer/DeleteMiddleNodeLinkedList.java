@@ -12,6 +12,9 @@ public class DeleteMiddleNodeLinkedList {
 
         LL.Node ans = deleteMiddle(list.head);
         System.out.println(ans);
+
+        LL.Node ansOptimized = deleteMiddleOptimized(list.head);
+        System.out.println(ansOptimized);
     }
 
     public static LL.Node deleteMiddle(LL.Node head){
@@ -53,4 +56,23 @@ public class DeleteMiddleNodeLinkedList {
             return head;
         }
     }   
+
+    public static LL.Node deleteMiddleOptimized(LL.Node head) {
+
+        if (head == null || head.next == null) {
+            return null;
+        }
+
+        LL.Node slow = head;
+        LL.Node fast = head.next;
+
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        slow.next = slow.next.next;
+
+        return head;
+    }
 }
