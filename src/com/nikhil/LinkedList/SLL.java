@@ -10,7 +10,7 @@ public class SLL {
         this.size = 0;
     }
 
-    public class Node {
+    public static class Node {
     
         public int value;
         public Node next;

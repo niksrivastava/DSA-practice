@@ -34,8 +34,7 @@ public class MergeSort {
 
     public static SLL.Node merge(SLL.Node list1, SLL.Node list2) {
 
-        SLL temp = new SLL();
-        SLL.Node dummyHead = temp.new Node(0);
+        SLL.Node dummyHead = new SLL.Node(0);
         SLL.Node tail = dummyHead;
 
         while (list1 != null && list2 != null) {
