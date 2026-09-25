@@ -1,4 +1,4 @@
-package com.nikhil.HashMap;
+package com.nikhil.HashMap.Questions;
 
 import java.util.HashMap;
 
