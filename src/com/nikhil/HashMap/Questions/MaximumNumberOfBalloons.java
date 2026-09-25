@@ -7,6 +7,8 @@ public class MaximumNumberOfBalloons {
         String s = "leetcode";
         int ans = maxBalloons(s);
         System.out.println(ans);
+        int betterAns = better(s);
+        System.out.println(betterAns);
     }
 
     public static int maxBalloons(String s){
@@ -78,5 +80,31 @@ public class MaximumNumberOfBalloons {
             }
         }
         return count;
+    }
+
+    public static int better(String s){
+        HashMap<Character, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < s.length(); i++) {
+
+            char ch = s.charAt(i);
+            if(map.containsKey(ch)){
+                map.put(ch, map.get(ch) + 1);
+
+            }else{
+                map.put(ch , 1);
+            }
+        }
+
+        if(!map.containsKey('b') || !map.containsKey('a') || !map.containsKey('l') || !map.containsKey('o') || !map.containsKey('n')){
+            return 0;
+        }
+        
+        int b = map.get('b');
+        int a = map.get('a');
+        int l = map.get('l')/2;
+        int o = map.get('o')/2;
+        int n = map.get('n');
+        return Math.min(b, Math.min(a, Math.min(l, Math.min(o, n))));
     }
 }
