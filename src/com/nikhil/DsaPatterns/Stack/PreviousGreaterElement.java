@@ -34,24 +34,3 @@ public class PreviousGreaterElement {
 
     }
 }
-
-
-// int res[] = new int[arr.length];
-// res[0] = -1;
-// Stack<Integer> st = new Stack<>();
-// st.push(arr[0]);
-// for(int i = 1; i < arr.length; i++){
-//     while(!st.isEmpty() && st.peek <= arr[i]){
-//         st.pop();
-//     }
-
-//     if(st.isEmpty()){
-//     res[i] = -1;
-
-//     }else{
-//         res[i]= st.peek();
-//         st.push(arr[i]);
-//     }
-// } 
-
-// return res;
