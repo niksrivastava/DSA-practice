@@ -1,5 +1,5 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
-public class Sqrt_of_X {
+public class SqrtOfX {
     public static void main(String[] args) {
         int x = 37;
         int ans = -1;

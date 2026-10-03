@@ -1,5 +1,5 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
-public class Mountain_in_Arr {
+public class MountainInArr {
     public static void main(String[] args) {
         int[] arr = {2,4,5,6,7,5,3};
         int search = bi_search(arr);

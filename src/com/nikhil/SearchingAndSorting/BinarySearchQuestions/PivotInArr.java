@@ -1,5 +1,5 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
-public class Pivot_in_Arr {
+public class PivotInArr {
     static int bi_search(int[] arr){
         int s =0;
         int e = arr.length-1;

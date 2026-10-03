@@ -1,5 +1,5 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
-public class RBSwithDublicateElements {
+public class RBSWithDuplicateElements {
     public static void main(String[] args) {
         int [] arr = {4, 5, 6, 7, 0, 1, 2, 3};
         System.out.println(findpivot(arr));

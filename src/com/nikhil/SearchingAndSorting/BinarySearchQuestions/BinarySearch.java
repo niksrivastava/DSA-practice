@@ -1,5 +1,5 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
-public class Binary_Search {
+public class BinarySearch {
     static int binary_search(int arr[], int key){
         int start = 0;
         int end = arr.length -1;

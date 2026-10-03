@@ -1,6 +1,6 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
 
-public class No_of_occurrence {
+public class NoOfOccurrence {
     public static void main(String[] args) {
         int arr[] = {1,1,2,2,2,2,3};
         int ans = upper(arr, 3) - lower(arr, 3);

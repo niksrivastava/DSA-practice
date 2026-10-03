@@ -1,5 +1,5 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
-public class Book_Allocation_Problem {
+public class BookAllocationProblem {
     public static void main(String[] args) {
         int[] arr_of_book_page = {10, 20, 30, 40};
         int search = bi_search(arr_of_book_page, 2 );

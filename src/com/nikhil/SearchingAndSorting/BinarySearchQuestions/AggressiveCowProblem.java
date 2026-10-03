@@ -1,7 +1,7 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
 import java.util.Arrays;
 
-public class Aggresive_Cow_Problem {
+public class AggressiveCowProblem {
     public static void main(String[] args) {
         int[] arr_of_cow_distance = {4,2,1,3,6};
         int search = bi_search(arr_of_cow_distance, 2);

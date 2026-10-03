@@ -1,6 +1,6 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
 
-public class Median_of_two_sorted_arr_with_BS {
+public class MedianOfTwoSortedArrWithBS {
     public static void main(String[] args) {
         int[] nums1 = {1,3};
         int[] nums2 = {2};

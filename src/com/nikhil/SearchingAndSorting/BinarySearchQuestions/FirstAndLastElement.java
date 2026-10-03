@@ -1,5 +1,5 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
-public class First_And_Last_element {
+public class FirstAndLastElement {
     public static void main(String[] args) {
         int [] arr = {3, 4 , 5, 5, 5, 5, 6, 6, 8, 9};
         int leftsearch = bi_leftsearch(arr, 5);

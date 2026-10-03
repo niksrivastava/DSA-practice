@@ -1,6 +1,6 @@
 package com.nikhil.SearchingAndSorting.BinarySearchQuestions;
 
-public class Upper_bound {
+public class UpperBound {
     public static void main(String[] args) {
         int arr[] = {1,1,2,2,2,2,3};
         int ans = occur(arr, 1);
