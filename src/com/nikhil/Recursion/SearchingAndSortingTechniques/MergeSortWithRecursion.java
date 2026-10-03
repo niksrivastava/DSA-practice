@@ -2,7 +2,7 @@ package com.nikhil.Recursion.SearchingAndSortingTechniques;
 
 import java.util.Arrays;
 
-public class Merge_sort_with_recursion {
+public class MergeSortWithRecursion {
     public static void main(String[] args) {
         int arr[] = {6,2,3,7,5,9,1};
         arr = merge_sort(arr);

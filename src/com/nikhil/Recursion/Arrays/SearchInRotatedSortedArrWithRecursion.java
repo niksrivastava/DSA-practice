@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.Arrays;
 
-public class Search_in_rotated_sorted_arr_with_recursion {
+public class SearchInRotatedSortedArrWithRecursion {
     public static void main(String[] args) {
         int arr[] = {5,6,7,8,9,1,2,3};
         System.out.println(search(arr, 2, 0, arr.length-1));

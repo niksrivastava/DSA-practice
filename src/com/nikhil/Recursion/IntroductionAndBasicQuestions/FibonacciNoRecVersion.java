@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 import java.util.*;
-public class Fibonacci_no_rec_version {
+public class FibonacciNoRecVersion {
 
     static void fibo(int n, int a, int b, int sum){
         sum = a+b;

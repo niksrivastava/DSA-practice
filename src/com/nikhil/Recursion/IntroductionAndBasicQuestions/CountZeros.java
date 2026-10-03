@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 
-public class Count_zeros {
+public class CountZeros {
     static int c = 0;
     public static void main(String[] args) {
         int n = 3000201;

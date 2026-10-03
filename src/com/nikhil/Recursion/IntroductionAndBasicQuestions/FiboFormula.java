@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 
-public class Fibo_formula {
+public class FiboFormula {
     public static void main(String[] args) {
         System.out.println(fibo_formula(50));
         System.out.println(fibo(5));

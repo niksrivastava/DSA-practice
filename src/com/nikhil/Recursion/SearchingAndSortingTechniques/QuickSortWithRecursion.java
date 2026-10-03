@@ -2,7 +2,7 @@ package com.nikhil.Recursion.SearchingAndSortingTechniques;
 
 import java.util.Arrays;
 
-public class Quick_sort_with_recursion {
+public class QuickSortWithRecursion {
     public static void main(String[] args) {
         int arr[] = {6,2,3,7,5,9,1};
         quick_sort_InPlace(arr, 0, arr.length-1);

@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.SearchingAndSortingTechniques;
 import java.util.*;
-public class Bubble_sort_with_recursion {
+public class BubbleSortWithRecursion {
     public static void main(String[] args) {
         int arr[] = {6,2,3,7,5,9,1};
         bubble(arr, arr.length-1, 1);

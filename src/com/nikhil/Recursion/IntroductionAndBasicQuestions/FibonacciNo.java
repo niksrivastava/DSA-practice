@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 import java.util.*;
-public class Fibonacci_no {
+public class FibonacciNo {
 
     static void fibo(int n){
         int a = 0;

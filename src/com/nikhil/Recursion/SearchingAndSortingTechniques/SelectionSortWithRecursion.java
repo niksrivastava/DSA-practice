@@ -2,7 +2,7 @@ package com.nikhil.Recursion.SearchingAndSortingTechniques;
 
 import java.util.Arrays;
 
-public class Selection_sort_with_recursion {
+public class SelectionSortWithRecursion {
     public static void main(String[] args) {
         int arr[] = {6,2,3,7,5,9,1};
         selection(arr, arr.length, 0, 0);

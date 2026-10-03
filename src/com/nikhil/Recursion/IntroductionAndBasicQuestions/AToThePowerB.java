@@ -2,7 +2,7 @@ package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 
 import java.util.Scanner;
 
-public class A_to_the_power_B {
+public class AToThePowerB {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();

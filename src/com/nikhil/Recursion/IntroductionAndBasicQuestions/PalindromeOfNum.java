@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 
-public class Palindrome_of_num {
+public class PalindromeOfNum {
     public static void main(String[] args) {
         int n = 123454321;
         reverse(n);

@@ -2,7 +2,7 @@ package com.nikhil.Recursion.Arrays;
 
 import java.util.ArrayList;
 
-public class Linear_search_with_recursion {
+public class LinearSearchWithRecursion {
     public static void main(String[] args) {
         int arr[] = {1,2,3523,4,853};
         System.out.println(LS_value(arr,0,0)+"," + " Which means: " +LS_bool(arr, 0, 0));

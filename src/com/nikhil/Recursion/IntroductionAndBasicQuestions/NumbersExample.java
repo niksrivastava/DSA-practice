@@ -1,5 +1,5 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
-public class Numbers_Example {
+public class NumbersExample {
     public static void main(String[] args) {
         print(1);
     }

@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 
-public class Sum_of_digits {
+public class SumOfDigits {
     public static void main(String[] args) {
         System.out.println(sum(1342));
     }

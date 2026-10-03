@@ -1,15 +1,14 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 import java.util.*;
-public class Print_counting_inc {
+public class PrintCountingDec {
 
     static void count(int n){
         if(n==0){
             return;
         }
-        
-        count(n-1);
+
         System.out.println(n);
-        
+        count(n-1);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

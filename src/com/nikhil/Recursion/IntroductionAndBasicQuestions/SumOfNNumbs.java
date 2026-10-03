@@ -1,20 +1,18 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
-import java.util.*;
-public class Power_of_two {
 
-    static int cal(int n){
-        if(n == 0){
+import java.util.Scanner;
+
+public class SumOfNNumbs {
+    static int sum(int n){
+        if(n<=1){
             return 1;
         }
-
-        int small_problem = cal(n-1);
-        int big_problem= 2*small_problem;
-        return big_problem;
+        return n+sum(n-1);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int ans = cal(n);
+        int ans = sum(n);
         System.out.println(ans);
         sc.close();
     }

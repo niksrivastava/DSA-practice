@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 
-public class Reverse_num {
+public class ReverseNum {
     public static void main(String[] args) {
         int n = 12345;
         reverse(n);

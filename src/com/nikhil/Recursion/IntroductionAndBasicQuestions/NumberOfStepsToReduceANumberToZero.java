@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 
-public class Number_of_Steps_to_Reduce_a_Number_to_Zero {
+public class NumberOfStepsToReduceANumberToZero {
     static int c = 0;
     public static void main(String[] args) {
         int n = 14;

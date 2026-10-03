@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.Arrays;
 
-public class Arr_sorted_or_not_with_rec {
+public class ArrSortedOrNotWithRec {
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5};
         System.out.println(sorted(arr, 0));

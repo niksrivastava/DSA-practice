@@ -1,6 +1,6 @@
 package com.nikhil.Recursion.IntroductionAndBasicQuestions;
 
-public class Product_of_digits {
+public class ProductOfDigits {
     public static void main(String[] args) {
         System.out.println(product(1342));
     }
