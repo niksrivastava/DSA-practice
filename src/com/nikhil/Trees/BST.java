@@ -87,7 +87,7 @@ public class BST {
             return;
         }
 
-        int mid = start - (start + end)/2;
+        int mid = (start + end)/2;
 
         this.insert(nums[mid]);
         populateSorted(nums, start, mid);
