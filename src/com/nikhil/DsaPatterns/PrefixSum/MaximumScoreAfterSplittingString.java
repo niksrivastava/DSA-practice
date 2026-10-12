@@ -12,7 +12,7 @@ public class MaximumScoreAfterSplittingString {
         int prefix = 0;
         int suffix = 0;
         int i = 0;
-        int max = 1;
+        int max = 0;
 
         while(i < n-1){
             if(s.charAt(i) == '0'){
