@@ -109,9 +109,9 @@ public class BinaryTree {
             return;
         }
         
-        preOrder(node.left);
+        inOrder(node.left);
         System.out.println(node.value + " ");
-        preOrder(node.right);
+        inOrder(node.right);
     }
 
     public void postOrder(){
@@ -123,8 +123,8 @@ public class BinaryTree {
             return;
         }
         
-        preOrder(node.left);
-        preOrder(node.right);
+        postOrder(node.left);
+        postOrder(node.right);
         System.out.println(node.value + " ");
     }
 }
